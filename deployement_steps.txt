@@ -1,0 +1,20 @@
+# Login to AWS Console
+
+1. Create IAM user for Deployment
+
+    #with specific acess
+    1. EC2 Acess : VM
+    2. ECR : Elastic container Register to save docker iamge
+
+
+Description: About the deployment
+
+	1. Build docker image of the source code
+	2. Push your docker image to ECR
+	3. Launch Your EC2 
+	4. Pull Your image from ECR in EC2
+	5. Lauch your docker image in EC2
+
+Policy:
+	1. AmazonEC2ContainerRegistryFullAccess
+	2. AmazonEC2FullAccess

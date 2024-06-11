@@ -54,4 +54,4 @@ def get_customer_orders(customer_id):
     return jsonify([{'id': order.id, 'description': order.description, 'amount': order.amount} for order in orders])
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0',posrt=8000,debug=True)
